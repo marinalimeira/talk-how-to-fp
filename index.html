@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>JavaScript Funcional</title>
+		<title>Como programar funcional?</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -26,19 +26,26 @@
 			<div class="slides">
         <span class="footer">@marinalimeira_</span>
 				<section>
-					<h1>JavaScript Funcional</h1>
+					<h1>Como programar funcional?</h1>
 				</section>
 
-				<section style="float: right;">
-          <h2>Marina Limeira</h2>
-          <ul class="about">
-            <li><img src="images/ufal.png"> &nbsp;Ciência da Computação</li>
-            <li><img src="images/b.png"> &nbsp;Analista de Sistemas</li>
-            <li><img src="images/rg.png"> <a href="http://railsgirls.com/maceio">Rails Girls Maceió</a></li>
-            <br />
-            <li><a href="http://www.marinalimeira.com">marinalimeira.com</a></li>
-          </ul>
-        </section>
+				<section>
+	        <h2>Marina Limeira</h2>
+	        <p style="font-size: 1.3em;"><a href="http://www.marinalimeira.com" class="animated-link">marinalimeira.com</a></p>
+	      </section>
+
+	      <section>
+	        <img src="images/bionexo.png" alt="">
+	      </section>
+
+	      <section>
+	        <img src="images/ufal.png" alt="">
+	      </section>
+
+				<section>
+					<h2><img src="images/rg.png" width="80px"alt=""> Rails Girls Maceió</h2>
+					<p><a href="http://railsgirls.com/maceio">railsgirls.com/maceio</a></p>
+				</section>
 
         <section>
           <h2>Agenda</h2>
@@ -51,7 +58,7 @@
 
         <section>
           <h2>JavaScript</h2>
-          <h3 class="fragment">Multi-paradigma</h3>
+          <p class="fragment">Multi-paradigma</p>
         </section>
 
         <section>
@@ -60,7 +67,7 @@
 
         <section>
           <h2>Orientado a Objetos</h2>
-          <h3>(com protótipos)</h3>
+          <p>(com protótipos)</p>
         </section>
 
         <section>
@@ -76,56 +83,24 @@
         </section>
 
         <section>
-          <h3>"sistema formal que estuda funções recursivas <strong>computáveis</strong></h3>
+          <p>"sistema formal que estuda funções recursivas <strong>computáveis</strong></p>
           <p class="fragment">[...]</p>
           <div class="fragment">
-            <h3>entidades que podem ser utilizadas como argumentos e retornadas como valores de outras funções"</h3>
+            <p>entidades que podem ser utilizadas como argumentos e retornadas como valores de outras funções"</p>
             <a href="https://pt.wikipedia.org/wiki/C%C3%A1lculo_lambda">- Wikipedia</a>
           </div>
         </section>
 
-        <section>
-          <pre>
-            <code data-trim data-noescape>
-fibs :: [Int]
-fibs = 0 : 1 : [ a + b | (a, b) <- zip fibs (tail fibs)]
-            </code>
-          </pre>
-        <h3>alguma_coisa.hs</h3>
-      </section>
-
-      <section>
-        <h2>WAT?</h2>
-      </section>
-
-      <section>
-        <h3>Enquanto uma linguagem funcional como <em>Haskell</em> utiliza recursão, uma linguagem imperativa ou multi-paradigma pode utilizar loops.</h3>
-				</section>
-
-        <section>
-          <h3>"Quando se trata de programação funcional, nós queremos reduzir tudo a uma chamada de função."</h3>
-        </section>
-
-        <section>
-          <h2>Funções <em class="fragment">puras</em></h2>
-          <ul>
-            <li class="fragment">Os dados recebidos não são alterados.</li>
-          </ul>
-        </section>
+	      <section>
+	        <img src="images/sailor-moon-wat.gif" alt="">
+	      </section>
 
 				<section>
-					<h2>Funções <em>puras</em></h2>
-					<ul>
-						<li>Um novo valor é criado e retornado.</li>
-					</ul>
+					<p>Trata a computação como uma avaliação de funções matemáticas e que evita estados ou dados <strong>mutáveis</strong></p>
 				</section>
-  
-        <section>
-          <h2>Funções matemáticas!</h2>
-        </section>
 
         <section>
-          <h3>"Uma relação $f: A \to B$ é uma função quando para qualquer x $\in$ A existe um único $(x,y) \in f$."</h3>
+          <p>Uma relação $f: A \to B$ é uma função quando para qualquer x $\in$ A existe um único $(x,y) \in f$.</p>
         </section>
 
         <section data-background="#fff" style="color: #292C39">
@@ -135,16 +110,16 @@ fibs = 0 : 1 : [ a + b | (a, b) <- zip fibs (tail fibs)]
 
         <section>
           <h2>E o Eevee?</h2>
-          <img class="fragment eevee" src="images/pokemons/espeon.png" alt="" />
-          <img class="fragment eevee" src="images/pokemons/jolteon.png" alt="" />
-          <img class="fragment eevee" src="images/pokemons/umbreon.png" alt="" />
-          <img class="fragment eevee" src="images/pokemons/vaporeon.png" alt="" />
-          <img class="fragment eevee" src="images/pokemons/flareon.png" alt="" />
+          <img class="eevee" src="images/pokemons/espeon.png" alt="" />
+          <img class="eevee" src="images/pokemons/jolteon.png" alt="" />
+          <img class="eevee" src="images/pokemons/umbreon.png" alt="" />
+          <img class="eevee" src="images/pokemons/vaporeon.png" alt="" />
+          <img class="eevee" src="images/pokemons/flareon.png" alt="" />
         </section>
 
-        <section>
+        <!-- <section>
           <h2>Recebe uma entrada $\to$<br>transforma $\to$<br>gera nova uma saída</h2>
-        </section>
+        </section> -->
 
         <section>
           <div class="func-evolute">
@@ -161,14 +136,41 @@ fibs = 0 : 1 : [ a + b | (a, b) <- zip fibs (tail fibs)]
         </section>
 
         <section>
-          <h2>Sempre é criado um novo objeto</h2>
+          <h2>Funções <em class="fragment">puras</em></h2>
+          <ul>
+            <li class="fragment">Os dados recebidos não são alterados.</li>
+          </ul>
         </section>
 
-        <section>
-          <h2>Nada de alterar o estado da entrada :)</h2>
-        </section>
+				<section>
+					<h2>Funções <em>puras</em></h2>
+					<ul>
+						<li>Um novo valor é criado e retornado.</li>
+					</ul>
+				</section>
 
-        <section>
+				<section>
+					<h2>Consumo de memória muito alto!</h2>
+				</section>
+
+				<section>
+					<h2>1957</h2>
+					<ul>
+						<li>&#9733; antes de Orientação a Objetos</li>
+						<li>&#9733; antes de programação estruturada</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="images/trend-data.gif" alt="">
+				</section>
+
+				<section>
+          <img src="images/elixir.png" alt="">
+          <h3>Elixir</h3>
+				</section>
+
+        <!-- <section>
           <h2>Sequência de Fibonnaci</h2>
           <h3 class="fragment">O elemento seguinte é a soma dos dois anteriores</h3>
           <h3 class="fragment">0, 1, 1, 2, 3, 5, 8, 13...</h3>
@@ -193,7 +195,7 @@ const fibonacci = (x) => {
           <p>$fibonnaci(3) \to$<br>$fibbonaci(2) + fibbonaci(1)$</p>
           <h2 class="fragment">...</h2>
           <h3 class="fragment">Cache!</h3>
-        </section>
+        </section> -->
 
         <section>
           <h2>Funções de Alta Ordem</h2>
@@ -247,10 +249,10 @@ const tipoAgua = (x) => (x.tipo === 'water');
           <img src="images/pokemons/filtered.png" alt="" />
         </section>
 
-        <section>
+        <!--<section>
           <h3>$.map()$ retorna um novo array,</h3>
           <h3>logo, o Vaporeon não será retornado no $.filter()$ :(</h3>
-        </section>
+        </section>-->
 
         <section>
           <h2>Funções de Primeira Classe</h2>
@@ -259,7 +261,7 @@ const tipoAgua = (x) => (x.tipo === 'water');
 
         <section>
 					<h2>Funções de Primeira Classe</h2>
-          <li>Funções como valores!</li>
+          <p>Funções como valores!</p>
         </section>
 
 				<section>
@@ -290,17 +292,41 @@ console.log(if(true) { "verdadeiro"; } else { "falso"; });
         </section>
 
         <section>
-          <h2>Elixir</h2>
-        </section>
+					<pre>
+						<code class="python">
+nomes = ["George", "Carla"]
+ nomes.map(&amp;lambda { |nome| nome.upcase })
+						</code>
+					</pre>
 
-        <section data-background="#fff">
-          <img src="images/react.png"/>
-          <h2>React</h2>
-          <!-- virtual dom. -->
+          <h3>Ruby</h3>
         </section>
 
         <section>
-          <img src="images/redux.png"/>
+					<pre>
+						<code class="python">
+nomes = ["George", "Carla"]
+map(lambda nome : nome.upper(), nomes)
+						</code>
+					</pre>
+
+          <h3>Python</h3>
+        </section>
+
+        <section>
+          <pre>
+            <code class="java">
+List&lt;String&gt; nomes = Arrays.asList("George", "Carla");
+
+nomes.map(nome -&gt; nome.toUpperCase());
+          	</code>
+          </pre>
+
+          <h3>Java 8</h3>
+    		</section>
+
+        <section>
+          <img src="images/redux.png" width="400px"/>
           <h3>Redux</h3>
 <!-- edux attempts to make state mutations predictable by imposing certain restrictions on how and when updates can happen. These restrictions are reflected in the three principles of Redux. -->
         </section>
